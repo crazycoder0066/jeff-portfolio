@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
-import { RxCrop, RxPencil2, RxDesktop, RxReader, RxRocket } from "react-icons/rx";
+import { RxCrop, RxPencil2, RxDesktop, RxReader, RxRocket, RxMagicWand } from "react-icons/rx";
 import { FreeMode, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -29,16 +29,22 @@ const serviceData = [
       "LLM-powered agents, RAG pipelines, multimodal chat, and ML systems built with OpenAI, Anthropic, LangChain, and Python.",
   },
   {
+    Icon: RxMagicWand,
+    title: "Agentic AI Development",
+    description:
+      "Autonomous agents and multi-agent systems with tool use, planning, and memory. Built with LangGraph, the Model Context Protocol (MCP), and function calling for real-world workflows.",
+  },
+  {
     Icon: RxDesktop,
     title: "Backend Development",
     description:
-      "Scalable REST and GraphQL APIs in Node.js, Python, and Go. Event-driven microservices with Kafka, RabbitMQ, and gRPC.",
+      "Scalable REST and GraphQL APIs with event-driven microservices, message queues, and gRPC for high-throughput, distributed systems.",
   },
   {
     Icon: RxCrop,
     title: "Frontend Engineering",
     description:
-      "Responsive, performant UIs with React, Next.js, and TypeScript. Real-time dashboards and data visualization with D3.js.",
+      "Responsive, performant, and accessible UIs with modern component-based frameworks. Real-time dashboards and rich data visualization.",
   },
   {
     Icon: RxPencil2,
