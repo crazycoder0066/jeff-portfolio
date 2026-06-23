@@ -47,6 +47,15 @@ const workItems = [
       "A unified platform for retail and wholesale teams combining product lifecycle management (PLM), product information management (PIM), and a quote-to-order CRM. Centralizes catalogs, tech packs, line sheets, and vendor communication to replace scattered spreadsheets and disconnected tools.",
     tech: ["PLM", "PIM", "CRM", "CPQ"],
   },
+  {
+    title: "VIVED Learning Interactive 3D Platform",
+    path: "/vived-learning.jpg",
+    link: "https://vivedlearning.com",
+    category: "Immersive EdTech Development",
+    description:
+      "An interactive 3D learning platform for K-12 STEM education with 1,000+ explorable and dissectible models across anatomy, chemistry, science, and the trades. Supports AR/VR and ZSpace displays and lets schools author their own activities — trusted by 3,000+ institutions and millions of students.",
+    tech: ["WebGL", "AR/VR", "3D Models", "ZSpace"],
+  },
 ];
 
 // number of items per slide (matches the 2x1 grid)
@@ -161,17 +170,13 @@ const ProjectModal = ({ project, onClose }) => {
 
 const WorkSlider = () => {
   const [swiper, setSwiper] = useState(null);
-  const [edges, setEdges] = useState({ isBeginning: true, isEnd: false });
   const [selected, setSelected] = useState(null);
-
-  const syncEdges = (sw) =>
-    setEdges({ isBeginning: sw.isBeginning, isEnd: sw.isEnd });
 
   return (
     <div className="flex items-center gap-x-2 sm:gap-x-4">
       <NavButton
         onClick={() => swiper?.slidePrev()}
-        disabled={!swiper || edges.isBeginning}
+        disabled={!swiper}
         label="Previous projects"
       >
         <BsArrowLeft aria-hidden />
@@ -179,16 +184,12 @@ const WorkSlider = () => {
 
       <Swiper
         spaceBetween={10}
+        rewind
         pagination={{
           clickable: true,
         }}
         modules={[Pagination]}
-        onSwiper={(sw) => {
-          setSwiper(sw);
-          syncEdges(sw);
-        }}
-        onSlideChange={syncEdges}
-        onResize={syncEdges}
+        onSwiper={setSwiper}
         className="flex-1 min-w-0 h-[280px] sm:h-[480px]"
       >
         {workSlides.map((images, i) => (
@@ -242,7 +243,7 @@ const WorkSlider = () => {
 
       <NavButton
         onClick={() => swiper?.slideNext()}
-        disabled={!swiper || edges.isEnd}
+        disabled={!swiper}
         label="Next projects"
       >
         <BsArrowRight aria-hidden />

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { RiMailLine, RiPhoneLine } from "react-icons/ri";
+import { RiGithubLine, RiMailLine, RiPhoneLine } from "react-icons/ri";
 
 import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
@@ -77,11 +77,21 @@ const Home = () => {
               <RiMailLine className="text-xl text-accent" aria-hidden />
               <span>jeffreymilam1031@gmail.com</span>
             </Link>
+            <Link
+              href="https://github.com/crazycoder0066"
+              title="GitHub"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="flex items-center gap-x-2 hover:text-accent transition-all duration-300"
+            >
+              <RiGithubLine className="text-xl text-accent" aria-hidden />
+              <span>crazycoder0066</span>
+            </Link>
           </motion.div>
         </div>
       </div>
       {/* image */}
-      <div className="w-[1280px] h-full absolute right-0 bottom-0">
+      <div className="w-[1280px] h-full absolute right-0 bottom-0 pointer-events-none">
         {/* bg img */}
         <div
           role="img"

@@ -56,16 +56,12 @@ const serviceData = [
 
 const ServiceSlider = () => {
   const [swiper, setSwiper] = useState(null);
-  const [edges, setEdges] = useState({ isBeginning: true, isEnd: false });
-
-  const syncEdges = (sw) =>
-    setEdges({ isBeginning: sw.isBeginning, isEnd: sw.isEnd });
 
   return (
     <div className="flex items-center gap-x-2 sm:gap-x-4">
       <NavButton
         onClick={() => swiper?.slidePrev()}
-        disabled={!swiper || edges.isBeginning}
+        disabled={!swiper}
         label="Previous services"
       >
         <BsArrowLeft aria-hidden />
@@ -82,17 +78,13 @@ const ServiceSlider = () => {
             spaceBetween: 15,
           },
         }}
+        rewind
         pagination={{
           clickable: true,
         }}
         modules={[FreeMode, Pagination]}
         freeMode
-        onSwiper={(sw) => {
-          setSwiper(sw);
-          syncEdges(sw);
-        }}
-        onSlideChange={syncEdges}
-        onResize={syncEdges}
+        onSwiper={setSwiper}
         className="flex-1 min-w-0 h-[280px] sm:h-[420px]"
       >
       {serviceData.map((item, i) => (
@@ -115,7 +107,7 @@ const ServiceSlider = () => {
 
       <NavButton
         onClick={() => swiper?.slideNext()}
-        disabled={!swiper || edges.isEnd}
+        disabled={!swiper}
         label="Next services"
       >
         <BsArrowRight aria-hidden />
