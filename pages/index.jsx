@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { RiMailLine, RiPhoneLine } from "react-icons/ri";
 
 import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
@@ -49,6 +51,32 @@ const Home = () => {
             className="hidden xl:flex"
           >
             <ProjectsBtn />
+          </motion.div>
+
+          {/* contact */}
+          <motion.div
+            variants={fadeIn("down", 0.5)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="flex flex-col sm:flex-row items-center justify-center xl:justify-start gap-4 sm:gap-x-8 mt-8 xl:mt-12"
+          >
+            <Link
+              href="tel:+16507610640"
+              title="Call"
+              className="flex items-center gap-x-2 hover:text-accent transition-all duration-300"
+            >
+              <RiPhoneLine className="text-xl text-accent" aria-hidden />
+              <span>1 650 761 0640</span>
+            </Link>
+            <Link
+              href="mailto:jeffreymilam1031@gmail.com"
+              title="Email"
+              className="flex items-center gap-x-2 hover:text-accent transition-all duration-300"
+            >
+              <RiMailLine className="text-xl text-accent" aria-hidden />
+              <span>jeffreymilam1031@gmail.com</span>
+            </Link>
           </motion.div>
         </div>
       </div>
