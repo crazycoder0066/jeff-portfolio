@@ -13,7 +13,7 @@ import "swiper/css/pagination";
 const workItems = [
   {
     title: "Sight Machine Manufacturing Analytics",
-    path: "/thumb4.jpg",
+    path: "/sight-machine.jpg",
     link: "https://sightmachine.com",
     category: "AI Full-stack Development",
     description:
@@ -22,7 +22,7 @@ const workItems = [
   },
   {
     title: "Alio Remote Patient Monitoring Platform",
-    path: "/thumb1.png",
+    path: "/alio.png",
     link: "https://alio.ai",
     category: "Healthcare AI Full-stack Development",
     description:
@@ -31,7 +31,7 @@ const workItems = [
   },
   {
     title: "Soapbox Supply Chain Platform",
-    path: "/thumb2.jpg",
+    path: "/soapbox.jpg",
     link: "https://onsoapbox.com",
     category: "SaaS Full-stack Development",
     description:
@@ -40,7 +40,7 @@ const workItems = [
   },
   {
     title: "Surefront Product Collaboration Platform",
-    path: "/thumb3.jpg",
+    path: "/surefront.jpg",
     link: "https://surefront.com",
     category: "SaaS Full-stack Development",
     description:
