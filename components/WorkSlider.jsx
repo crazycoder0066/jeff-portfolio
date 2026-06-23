@@ -15,10 +15,10 @@ const workItems = [
     title: "Sight Machine Manufacturing Analytics",
     path: "/sight-machine.jpg",
     link: "https://sightmachine.com",
-    category: "AI Full-stack Development",
+    category: "Agentic AI Full-stack Development",
     description:
-      "A manufacturing analytics platform that ingests high-volume plant and machine data into a unified data model, surfacing real-time production insights, anomaly detection, and OEE dashboards that help factories reduce downtime and improve yield.",
-    tech: ["Real-time", "Machine Learning", "Time-series DB"],
+      "A manufacturing analytics platform that ingests high-volume plant and machine data into a unified data model, surfacing real-time production insights, anomaly detection, and OEE dashboards that help factories reduce downtime and improve yield. Built agentic AI workflows — LLM-powered agents with tool use and retrieval over the factory data model — that let operators query plant performance in natural language and autonomously surface root-cause analysis.",
+    tech: ["Agentic AI", "LLM Agents", "RAG", "Real-time", "Machine Learning", "Time-series DB"],
   },
   {
     title: "Alio Remote Patient Monitoring Platform",
