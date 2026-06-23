@@ -1,13 +1,6 @@
 import { useState } from "react";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
-import {
-  RxCrop,
-  RxPencil2,
-  RxDesktop,
-  RxReader,
-  RxRocket,
-  RxArrowTopRight,
-} from "react-icons/rx";
+import { RxCrop, RxPencil2, RxDesktop, RxReader, RxRocket } from "react-icons/rx";
 import { FreeMode, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -111,17 +104,9 @@ const ServiceSlider = () => {
             </div>
 
             {/* title & description */}
-            <div className="mb-4">
+            <div>
               <div className="mb-2 text-lg">{item.title}</div>
               <p className="max-w-[350px] leading-normal">{item.description}</p>
-            </div>
-
-            {/* arrow */}
-            <div className="text-3xl mt-auto">
-              <RxArrowTopRight
-                className="group-hover:rotate-45 group-hover:text-accent transition-all duration-300"
-                aria-hidden
-              />
             </div>
           </div>
         </SwiperSlide>

@@ -12,76 +12,40 @@ import "swiper/css/pagination";
 
 const workItems = [
   {
-    title: "Enterprise AI Workflow Platform",
+    title: "Sight Machine Manufacturing Analytics",
+    path: "/thumb4.jpg",
+    link: "https://sightmachine.com",
+    category: "AI Full-stack Development",
+    description:
+      "A manufacturing analytics platform that ingests high-volume plant and machine data into a unified data model, surfacing real-time production insights, anomaly detection, and OEE dashboards that help factories reduce downtime and improve yield.",
+    tech: ["Real-time", "Machine Learning", "Time-series DB"],
+  },
+  {
+    title: "Alio Remote Patient Monitoring Platform",
     path: "/thumb1.png",
     link: "https://alio.ai",
-    category: "AI Engineering",
+    category: "Healthcare AI Full-stack Development",
     description:
-      "A no-code platform that lets enterprise teams compose LLM-powered automation workflows. Includes a visual builder, RAG over private knowledge bases, and human-in-the-loop approvals, serving thousands of daily runs.",
-    tech: ["Next.js", "LangChain", "OpenAI", "PostgreSQL", "Redis"],
+      "A remote patient monitoring platform for chronic disease management — continuously tracking kidney disease, heart failure, and dialysis patients through non-invasive vitals and lab markers like potassium, hemoglobin, and heart rate. Built to FDA and SFDA standards to surface early warning signs to care teams.",
+    tech: ["HIPAA", "FHIR", "FDA"],
   },
   {
-    title: "Multimodal Chat Interface",
+    title: "Soapbox Supply Chain Platform",
     path: "/thumb2.jpg",
-    link: "http://example.com",
-    category: "AI Engineering",
+    link: "https://onsoapbox.com",
+    category: "SaaS Full-stack Development",
     description:
-      "A streaming chat product supporting text, image, and document inputs with real-time token rendering, conversation branching, and tool-calling. Built for low-latency responses at scale.",
-    tech: ["React", "WebSockets", "Anthropic", "Node.js"],
+      "An all-in-one supply chain platform that unifies order management, real-time inventory tracking, and shipping automation in a single system. Integrates with Shopify, Amazon, NetSuite, and major carriers — replacing fragmented tooling and scaling to over a million orders.",
+    tech: ["Shopify", "Amazon", "NetSuite", "REST APIs"],
   },
   {
-    title: "ML Media Metadata Pipeline",
+    title: "Surefront Product Collaboration Platform",
     path: "/thumb3.jpg",
-    link: "http://example.com",
-    category: "Data Engineering",
+    link: "https://surefront.com",
+    category: "SaaS Full-stack Development",
     description:
-      "An automated pipeline that enriches large media libraries with ML-generated metadata — scene detection, transcription, and tagging — and exposes it through a searchable catalog.",
-    tech: ["Python", "Airflow", "PyTorch", "AWS S3"],
-  },
-  {
-    title: "Real-time Analytics Dashboard",
-    path: "/thumb4.jpg",
-    link: "http://example.com",
-    category: "Frontend Engineering",
-    description:
-      "A high-density analytics dashboard streaming live metrics with sub-second updates, custom D3 visualizations, and configurable widgets backed by a columnar event store.",
-    tech: ["React", "D3.js", "ClickHouse", "Kafka"],
-  },
-  {
-    title: "Snowflake Microsite",
-    path: "/thumb4.jpg",
-    link: "http://example.com",
-    category: "Creative Development",
-    description:
-      "An interactive marketing microsite featuring a 3D particle snow effect, scroll-driven animations, and a perfect Lighthouse score across performance and accessibility.",
-    tech: ["Next.js", "Three.js", "Framer Motion"],
-  },
-  {
-    title: "Cloud Infrastructure Modernization",
-    path: "/thumb1.jpg",
-    link: "http://example.com",
-    category: "Cloud & DevOps",
-    description:
-      "Migrated a monolith to containerized microservices on Kubernetes with fully codified infrastructure, blue-green deploys, and CI/CD, cutting release time from days to minutes.",
-    tech: ["Terraform", "AWS", "Kubernetes", "GitHub Actions"],
-  },
-  {
-    title: "B2B SaaS Platform",
-    path: "/thumb2.jpg",
-    link: "http://example.com",
-    category: "Full-stack",
-    description:
-      "A multi-tenant SaaS platform with role-based access, usage-based billing, and an admin analytics suite, designed for horizontal scaling from day one.",
-    tech: ["Next.js", "Node.js", "Stripe", "PostgreSQL"],
-  },
-  {
-    title: "Healthcare Data API",
-    path: "/thumb3.jpg",
-    link: "http://example.com",
-    category: "Backend Engineering",
-    description:
-      "A HIPAA-conscious API layer exposing FHIR-compliant healthcare records over gRPC and REST, with audit logging, fine-grained authorization, and end-to-end encryption.",
-    tech: ["Go", "gRPC", "FHIR", "GCP"],
+      "A unified platform for retail and wholesale teams combining product lifecycle management (PLM), product information management (PIM), and a quote-to-order CRM. Centralizes catalogs, tech packs, line sheets, and vendor communication to replace scattered spreadsheets and disconnected tools.",
+    tech: ["PLM", "PIM", "CRM", "CPQ"],
   },
 ];
 
