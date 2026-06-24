@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
-import { RxCrop, RxPencil2, RxDesktop, RxReader, RxRocket, RxMagicWand } from "react-icons/rx";
+import { RxCrop, RxPencil2, RxDesktop, RxReader, RxRocket, RxMagicWand, RxCube } from "react-icons/rx";
 import { FreeMode, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -33,6 +33,12 @@ const serviceData = [
     title: "Agentic AI Development",
     description:
       "Autonomous agents and multi-agent systems with tool use, planning, and memory. Built with LangGraph, the Model Context Protocol (MCP), and function calling for real-world workflows.",
+  },
+  {
+    Icon: RxCube,
+    title: "ML Model Development",
+    description:
+      "End-to-end machine learning, from data ingestion and feature engineering to model training, evaluation, deployment, and monitoring. Built with PyTorch, TensorFlow, scikit-learn, and MLflow.",
   },
   {
     Icon: RxDesktop,
