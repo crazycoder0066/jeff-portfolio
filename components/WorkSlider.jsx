@@ -56,6 +56,15 @@ const workItems = [
       "An interactive 3D learning platform for K-12 STEM education with 1,000+ explorable and dissectible models across anatomy, chemistry, science, and the trades. Supports AR/VR and ZSpace displays and lets schools author their own activities — trusted by 3,000+ institutions and millions of students.",
     tech: ["WebGL", "AR/VR", "3D Models", "ZSpace"],
   },
+  {
+    title: "Automatiq Ticket Pricing Automation",
+    path: "/automatiq.jpg",
+    link: "https://www.automatiq.com/",
+    category: "SaaS Full-stack Development",
+    description:
+      "A pricing automation and inventory management platform for secondary ticket market brokers. Continuously ingests live marketplace data to drive dynamic, rule-based pricing that keeps thousands of listings competitive in real time, while syncing inventory across major exchanges. Powers over 165,000 brokers managing billions in ticket inventory — now part of Automatiq.",
+    tech: ["Dynamic Pricing", "Real-time", "Marketplace APIs", "SaaS"],
+  },
 ];
 
 // number of items per slide (matches the 2x1 grid)
