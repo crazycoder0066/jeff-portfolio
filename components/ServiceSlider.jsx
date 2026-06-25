@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
-import { RxCrop, RxPencil2, RxDesktop, RxReader, RxRocket, RxMagicWand, RxCube, RxStack } from "react-icons/rx";
+import { RxCrop, RxPencil2, RxDesktop, RxReader, RxRocket, RxMagicWand, RxCube, RxStack, RxLink2 } from "react-icons/rx";
 import { FreeMode, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -51,6 +51,12 @@ const serviceData = [
     title: "Backend Development",
     description:
       "Scalable REST and GraphQL APIs with event-driven microservices, message queues, and gRPC for high-throughput, distributed systems.",
+  },
+  {
+    Icon: RxLink2,
+    title: "API Integration",
+    description:
+      "Third-party integrations across CRMs, payments, shipping, and messaging — HubSpot, Zoho, Salesforce, UPS, Braintree, and Twilio. Webhooks, OAuth, and resilient sync with retries and rate-limit handling.",
   },
   {
     Icon: RxCrop,
